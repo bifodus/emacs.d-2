@@ -41,4 +41,7 @@
 (load-theme 'dracula t)
 (add-to-list 'load-path "~/neotree")
 (require 'neotree)
+(setq neo-smart-open t)
+(setq projectile-switch-project-action 'neotree-projectile-action)
 (global-set-key [f8] 'neotree-toggle)
+(global-linum-mode t)
