@@ -39,3 +39,6 @@
 (setq org-log-done t)
 (add-to-list 'custom-theme-load-path "~.emacs.d/themes/")
 (load-theme 'dracula t)
+(add-to-list 'load-path "~/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
