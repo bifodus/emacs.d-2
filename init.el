@@ -15,7 +15,7 @@
  ;; If there is more than one, they won't work right.
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
- '(package-selected-packages (quote (magit avy ace-jump-mode org)))
+ '(package-selected-packages (quote (projectile magit avy org)))
  '(winner-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
