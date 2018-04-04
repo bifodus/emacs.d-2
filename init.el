@@ -49,3 +49,5 @@
 (global-set-key [f8] 'neotree-toggle)
 (global-linum-mode t)
 (global-set-key (kbd "M-i") 'imenu)
+(ido-mode 1)
+(setq ido-everywhere t)
