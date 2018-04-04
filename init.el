@@ -15,7 +15,9 @@
  ;; If there is more than one, they won't work right.
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
- '(package-selected-packages (quote (dracula-theme Projectile magit avy org)))
+ '(package-selected-packages
+   (quote
+    (neotree helm dracula-theme Projectile magit avy org)))
  '(winner-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -41,6 +43,7 @@
 (load-theme 'dracula t)
 (add-to-list 'load-path "~/neotree")
 (require 'neotree)
+(require 'helm-config)
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
 (global-set-key [f8] 'neotree-toggle)
