@@ -17,7 +17,7 @@
  '(ido-mode (quote both) nil (ido))
  '(package-selected-packages
    (quote
-    (neotree helm dracula-theme Projectile magit avy org)))
+    (whole-line-or-region neotree helm dracula-theme Projectile magit avy org)))
  '(winner-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
