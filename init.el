@@ -55,3 +55,5 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "|" "DONE(d)")
 	(sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+(define-key global-map "\C-cc" 'org-capture)
