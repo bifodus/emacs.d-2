@@ -39,6 +39,7 @@
 (global-set-key (kbd "C-'") 'avy-goto-char-2)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
+(global-auto-revert-mode t)
 (setq org-log-done t)
 (add-to-list 'custom-theme-load-path "~.emacs.d/themes/")
 (load-theme 'dracula t)
