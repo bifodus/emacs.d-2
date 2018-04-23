@@ -61,7 +61,7 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "|" "DONE(d)")
 	(sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
-(setq org-default-notes-file (concat org-directory "/organizer.org"))
+(setq org-default-notes-file (concat org-directory "~/org/organizer.org"))
 (define-key global-map "\C-cc" 'org-capture)
 (setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
 (global-set-key (kbd "C-c o")
