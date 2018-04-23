@@ -63,4 +63,6 @@
 	(sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
-(setq backup-directory-alist '(("" ."~/.emacs.d/emacs-backup"))
+(setq backup-directory-alist '(("" ."~/.emacs.d/emacs-backup")))
+(global-set-key (kbd "C-c o")
+		(lambda () (interactive) (find-file "~/organizer.org")))
