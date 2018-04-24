@@ -67,3 +67,4 @@
 (global-set-key (kbd "C-c o")
 		(lambda () (interactive) (find-file "~/organizer.org")))
 (setq org-refile-targets '((org-agenda-files . (:maxlevel . 6))))
+(menu-bar-mode 1)
