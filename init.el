@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -18,7 +17,7 @@
  '(ido-mode (quote both) nil (ido))
  '(package-selected-packages
    (quote
-    (whole-line-or-region neotree helm dracula-theme Projectile magit avy org)))
+    (whole-line-or-region helm dracula-theme Projectile magit avy org)))
  '(winner-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -43,16 +42,12 @@
 (setq org-log-done t)
 (add-to-list 'custom-theme-load-path "~.emacs.d/themes/")
 (load-theme 'dracula t)
-(add-to-list 'load-path "~/neotree")
-(add-to-list 'load-path "~/projectile")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (require 'projectile)
 (projectile-global-mode)
-(require 'neotree)
 (require 'helm-config)
-(setq neo-smart-open t)
-(setq projectile-switch-project-action 'neotree-projectile-action)
+(require 'find-file-in-project)
 (setq projectile-enable-caching t)
-(global-set-key [f8] 'neotree-toggle)
 (global-linum-mode t)
 (global-set-key (kbd "M-i") 'imenu)
 (setq ido-enable-flex-matching t)
@@ -68,3 +63,4 @@
 		(lambda () (interactive) (find-file "~/organizer.org")))
 (setq org-refile-targets '((org-agenda-files . (:maxlevel . 6))))
 (menu-bar-mode 1)
+(setq org-src-tab-acts-natively t)
