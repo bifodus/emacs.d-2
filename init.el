@@ -64,3 +64,5 @@
 (setq org-refile-targets '((org-agenda-files . (:maxlevel . 6))))
 (menu-bar-mode 1)
 (setq org-src-tab-acts-natively t)
+(global-set-key (kbd "M-p") 'find-file-in-project)
+(show-paren-mode 1)
